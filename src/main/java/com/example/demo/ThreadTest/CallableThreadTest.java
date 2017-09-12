@@ -1,7 +1,6 @@
 package com.example.demo.ThreadTest;
 
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
@@ -30,10 +29,10 @@ public class CallableThreadTest implements Callable<Integer> {
             }
         }
 
-        try {
-            System.out.println("子线程返回值:" + ft.get());
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     System.out.println("子线程返回值:" + ft.get());
+        // } catch (InterruptedException | ExecutionException e) {
+        //     e.printStackTrace();
+        // }
     }
 }
